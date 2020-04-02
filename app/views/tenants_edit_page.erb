@@ -1,0 +1,19 @@
+<form method="POST" action="/tenants/<%@tenant.id%>">
+<input id="hidden" type="hidden" name="_method" value="PATCH">
+<div>
+    <input name = "name" type = "text">   
+</div>
+<div>
+    <select name="address">
+        <% @all_apartments.each do | apartment | %>
+        <option value = "<% apartment.id %>">
+            <%= apartment.address %>
+        </option>
+        <%  end %>
+    </select>
+</div> 
+<div>
+    <input type="submit">
+</div>
+</form>
+

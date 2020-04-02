@@ -1,0 +1,9 @@
+Tenant belongs to Apartment 
+Tenant has one Rent
+
+Apartment has many Tenants(thru rent)
+Aparment has many Rents()
+
+Rent belongs to an Apartment
+Rent belongs to a Tenant
+
